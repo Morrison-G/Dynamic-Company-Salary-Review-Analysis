@@ -26,9 +26,13 @@ Product details: Employee ID, Employee name, department, Grade level, Basic, Hou
 > ## Key Business Questions Answered
 
 1.	Analyze and determine the salary structure for each staff, determine the salary pay for different grade level?
+   
 Add a calculated column:
+
  =VLOOKUP($E9,'Simple Salary Structure'!$B$7:$I$16,Database!F2,0)
+
 NOTE: The table array column 2 would be changed for each column to be calculated. 
+
 NOTE: A more simplified process was used to generate the table without repeating the process over again. Formula: =VLOOKUP($E9,'Simple Salary Structure'!$B$7:$I$16,Database!F$7,0)
 
 > ## Section Details
